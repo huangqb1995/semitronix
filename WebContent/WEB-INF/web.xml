@@ -9,19 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>upload</servlet-name>
-  	<servlet-class>servlet.UploadServlet</servlet-class>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>servlet.UploadServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>upload</servlet-name>
-  	<url-pattern>/uploadfiles</url-pattern>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/uploadfiles</url-pattern>
   </servlet-mapping>
-  
- <listener>
-	<listener-class>
+  <listener>
+    <listener-class>
 	org.apache.commons.fileupload.servlet.FileCleanerCleanup
 	</listener-class>
-</listener> 
+  </listener>
 </web-app>

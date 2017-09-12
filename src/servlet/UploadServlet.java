@@ -57,8 +57,9 @@ public class UploadServlet extends HttpServlet {
 			out.write("{}");
 			
 			//connect to database
+			Connection conn = null;
 			try{
-				Connection conn = DBConnect.getConnection();
+				 conn = DBConnect.getConnection();
 				if( conn != null){
 					System.out.println("Connect success!");
 				}else{
